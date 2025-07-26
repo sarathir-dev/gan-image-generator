@@ -58,3 +58,5 @@ for epoch in range(1, epochs + 1):
         f"[Epoch {epoch}/{epochs}] D loss: {d_loss.item():.4f} | G loss: {g_loss.item():.4f}")
     if epoch % 10 == 0:
         plot_generated_images(generator, latent_dim, device, epoch)
+
+torch.save(generator.state_dict(), "generator.pth")
