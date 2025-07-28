@@ -16,7 +16,10 @@ A minimal implementation of a Generative Adversarial Network (GAN) using PyTorch
 
 ## Setup Instructions
 
-1. Clone the repository:
+1. Clone the repository: 
+```bash 
+git clone https://github.com/sarathir-dev/gan-image-generator.git
+```
 2. Install required dependencies
 3. Run training:
 ``` train.py ```
