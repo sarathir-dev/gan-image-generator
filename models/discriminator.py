@@ -14,4 +14,5 @@ class Discriminator(nn.Module):
         )
 
     def forward(self, img):
-        return self.model(img)
+        img_flat = img.view(img.size(0), -1)
+        return self.model(img_flat)

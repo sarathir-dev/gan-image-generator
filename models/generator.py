@@ -16,4 +16,6 @@ class Generator(nn.Module):
         )
 
     def forward(self, z):
-        return self.model(z)
+        img = self.model(z)
+        img = img.view(img.size(0), -1)
+        return img
